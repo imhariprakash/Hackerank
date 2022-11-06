@@ -1,0 +1,12 @@
+import re
+
+no_of_times = int(input())
+
+for i in range(no_of_times):
+    pan_number = input()
+    Regex_Pattern = r"^[A-Z]{4}[A-Z]{1}[0-9]{4}[A-Z]$"
+    if(bool(re.search(Regex_Pattern, pan_number))):
+        print("YES")
+    else:
+        print("NO")
+        
